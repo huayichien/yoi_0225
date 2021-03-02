@@ -1,0 +1,319 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+
+body{
+	font-family:'Noto Serif JP', serif;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*==================header=================*/
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	height: 100px;
+	position: relative;
+	z-index: 888;
+}
+
+.logo{
+	display: block;
+}
+
+.sugi { /*=====球==========*/
+	width: 500px;
+	height: 500px;
+	background-image: url(../img/tama_test@2x.png);
+	background-repeat: no-repeat;
+	margin-bottom: 120px;	
+}
+
+header li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 50px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+
+/*===================主照+主選單================*/
+
+.main{
+	overflow: hidden;
+	background-color: rgba(0,0,0,.1);
+}
+
+nav{
+	width: 85px;
+	float: right;
+}
+
+nav ul{
+	width: 85px;
+	height: 520px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px 0 0 20px;
+	margin-top: 150px;
+	padding-top: 15px;
+	position: relative;
+	z-index: 888;
+	position: fixed;
+}
+
+nav li a{
+	display: block;
+	width: 18px;
+	height: 90px;
+	margin: 30px 30px;
+	writing-mode: vertical-lr;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 900;
+	word-spacing: 3px;
+	color: black;
+	position: relative;
+	/*color:#39B44A;*/
+}
+
+nav li a:before{
+	content: "●";
+	color:rgba(57,180,74,0);
+	position: absolute;
+}
+
+nav li a:hover:before{
+	color:rgba(57,180,74,1);
+	animation: ball .5s linear infinite;
+}
+
+@keyframes ball{
+
+	0%{top:-30px;}
+	100%{top:-20px;}
+}
+
+article{
+	width: 1000px;
+	float: left;
+
+}
+
+.rice{
+	background-image: url(../img/rice_bg@2x.png);
+	background-repeat: no-repeat;
+	width: 1200px;
+	height: 820px;
+}
+
+.rice h1{
+	writing-mode: vertical-rl;
+	font-size: 48px;
+	font-weight: 900;
+	color: rgba(70,70,70,.6);
+	padding-left:300px;
+	padding-top: 150px;
+}
+
+.rice a{
+	display: block;
+	text-decoration: none;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 200px auto;
+	font-size: 30px;
+	text-align: center;
+	color: gray;
+}
+
+.rice2{
+	width: 1800px;
+	position: relative;
+	left: -300px;
+	clear: both;
+	padding-top: 100px;
+}
+
+#rice_L{
+	width:600px;
+	display: block;
+	float: left;
+}
+
+#rice_R{
+	width:600px;
+	display: block;
+	float: right;
+}
+
+.rice2 h2{
+	width: 1800px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 30px;
+	color: rgba(0,0,0,.6);
+	padding-top: 100px;
+}
+
+.rice2 p{
+	width: 1800px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 40px;
+	color: rgba(0,0,0,.6);
+}
+
+.rice2 p:after{
+	content: "scroll";
+	display: block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 250px auto 0 auto;
+	font-size: 30px;
+	text-align: center;
+	color: gray;
+}
+
+.water{
+	background-image: url(../img/fuji@2x.png);
+	background-repeat: no-repeat;
+	width: 1200px;
+	height: 820px;
+	margin-top: 50px;
+}
+
+
+.water h1{
+	writing-mode: vertical-rl;
+	font-size: 48px;
+	font-weight: 900;
+	color: white;
+	padding-left:200px;
+	padding-top: 120px;
+	text-shadow: black  0px 0px  3px;
+}
+
+.water a{
+	display: block;
+	text-decoration: none;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 250px auto;
+	font-size: 30px;
+	text-align: center;
+	color: gray;
+}
+
+.water2{
+	width: 1800px;
+	position: relative;
+	left: -300px;
+	padding-top: 100px;
+}
+
+#water_L{
+	width:600px;
+	display: block;
+	float: left;
+	
+}
+
+#water_R{
+	width:600px;
+	display: block;
+	float: right;
+	
+}
+
+.water2 h2{
+	width: 1800px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 30px;
+	color: rgba(0,0,0,.6);
+	padding-top: 100px;
+}
+
+.water2 p{
+	width: 1800px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 40px;
+	color: rgba(0,0,0,.6);
+}
+
+.water2 p:after{
+	content: "scroll";
+	display: block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 300px auto 0 auto;
+	font-size: 30px;
+	text-align: center;
+	color: gray;
+}
+
+.product{
+	background-image: url(../img/product@2x.png);
+	background-repeat: no-repeat;
+	width: 1200px;
+	height: 820px;
+	margin-top: 50px;
+}
+
+/*=========footer=============*/
+
+footer{
+	width: 1200px;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 22px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer li a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../icon/socialmedia@2x.png);
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover@2x.png);
+}
+
+.TB{background-position:-36px 0; }
+.IG{background-position:-72px 0; }
+
+
